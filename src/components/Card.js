@@ -6,7 +6,7 @@ function Card({ card, onClick }) {
   return (
     <div
       className={`memory-card${card.isFlipped ? " flip" : ""}`}
-      onClick={()=>onClick(card.id)}
+      onClick={onClick}
       style={{ order: card.order }}
       data-testid={card.id}
     >
